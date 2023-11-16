@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="minispel.js" defer></script>
+    <link rel="stylesheet" href="minispel.css" />
+    <title>Övning 7 - Minispel</title>
+  </head>
+  <body>
+    <section id="game-dice">
+      <div id="gameover"></div>
+      <div id="scorebox">
+        <h2>Score</h2>
+        <h3>You</h3>
+        <div id="score-player">0</div>
+        <h3>Opponent</h3>
+        <div id="score-computer">0</div>
+      </div>
+      <div id="numberbox">
+        <h3>Your roll</h3>
+        <div id="number-player">-</div>
+        <h3>Opponent roll</h3>
+        <div id="number-computer">-</div>
+        <button>Roll dice</button>
+      </div>
+    </section>
+    <section id="game-color">
+      <h2>Guess a color</h2>
+      <form id="color-form">
+        <input type="text" id="color-picker" name="color-picker" list="color-list" />
+        <button id="color-button">Guess</button>
+        <button id="color-reset">Start over</button>
+      </form>
+      <div id="color-result"></div>
+      <div id="color-score"></div>
+    </section>
+  </body>
+</html>

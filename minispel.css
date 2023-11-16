@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+}
+
+section {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid rgb(25,25,25);
+    background-color: white;
+    padding: 2rem;
+}
+
+#gameover {
+    display: none;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#scorebox {
+    display: grid;
+    gap: 0rem 6rem;
+    padding: 0px;
+    justify-content: space-between;
+    grid-template-areas: 
+    "score-box-label score-box-label"
+    "score-player-label score-computer-label" 
+    "score-player score-computer";
+    background-color: rgb(220, 220, 220);
+}
+
+#scorebox h2 {
+    grid-area: score-box-label;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    width: 100%;
+}
+
+#scorebox h3:nth-of-type(1) {
+    grid-area: score-player-label;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    padding: 0.25rem 0.7rem 0px 0.7rem;
+}
+
+#scorebox h3:nth-of-type(2) {
+    grid-area: score-computer-label;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    padding: 0.25rem 0.7rem 0px 0.7rem;
+}
+
+#score-player {
+    grid-area: score-player;
+    margin: 0px;
+    padding: 0.25rem 0.7rem 0.5rem 0.7rem;
+}
+
+#score-computer {
+    grid-area: score-computer;
+    margin: 0px;
+    padding: 0.25rem 0.7rem 0.25rem 0.7rem;
+}
+
+#numberbox {
+    display: grid;
+    gap: 0rem 6rem;
+    padding: 0.75rem;
+    grid-template-areas: 
+    "roll-player-label roll-computer-label"
+    "roll-player roll-computer"
+    "roll-button roll-button";
+}
+
+#numberbox h3:nth-of-type(1) {
+    grid-area: roll-player-label;
+    font-family: Arial, sans-serif;
+}
+
+#numberbox h3:nth-of-type(2) {
+    grid-area: roll-computer-label;
+    font-family: Arial, sans-serif;
+    text-align: right;
+}
+
+#number-player {
+    grid-area: roll-player;
+    text-align: left;
+}
+
+#number-computer {
+    grid-area: roll-computer;
+    text-align: right;
+}
+
+#numberbox button {
+    grid-area: roll-button;
+    margin-top: 3rem;
+}
+
+#color-result {
+    background-color: black;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0.5rem 1.0rem;
+}
+
+#color-score {
+    font-family: Arial, sans-serif;
+}
